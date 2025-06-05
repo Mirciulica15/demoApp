@@ -1,0 +1,26 @@
+{
+    "repository": "your-username/your-repository-name",
+    "github_token": "your_github_personal_access_token_here",
+    "bugs_file": "bug_tickets.json",
+    "settings": {
+        "create_labels": true,
+        "delay_between_issues": 1,
+        "batch_size": 10
+    },
+    "instructions": {
+        "setup": [
+            "1. Replace 'your-username/your-repository-name' with your actual GitHub repository",
+            "2. Get a GitHub personal access token from https://github.com/settings/tokens",
+            "3. Make sure the token has 'repo' permissions",
+            "4. Replace 'your_github_personal_access_token_here' with your actual token",
+            "5. Install dependencies: pip install -r requirements.txt",
+            "6. Run the importer: python github_issue_importer.py --config config.json"
+        ],
+        "alternative_usage": [
+            "You can also use command line arguments:",
+            "python github_issue_importer.py --repo owner/repo --token your_token",
+            "Use --dry-run flag to test without creating actual issues",
+            "Use --create-labels to create standard bug tracking labels"
+        ]
+    }
+}
