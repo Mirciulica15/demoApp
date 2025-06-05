@@ -16,7 +16,13 @@ This application serves as a testing ground for:
 2. Interact with the todo application
 3. Notice various bugs and issues (they're intentional!)
 
-## 🐛 Bug Categories
+## � App Screenshot
+
+<img src="screenshot.png" alt="Bug-Ridden Todo App Screenshot" style="max-height: 300px;">
+
+*The screenshot shows several visible bugs including invisible text, misaligned elements, and responsive design issues.*
+
+## �🐛 Bug Categories
 
 The app contains bugs in these areas:
 
