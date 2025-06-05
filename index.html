@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug-Ridden Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Todo List</h1>
+        <div class="input-section">
+            <input type="text" id="todoInput" placeholder="Enter a new task...">
+            <button onclick="addTodo()">Add Task</button>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" onclick="filterTodos('all')">All</button>
+            <button class="filter-btn" onclick="filterTodos('pending')">Pending</button>
+            <button class="filter-btn" onclick="filterTodos('completed')">Completed</button>
+        </div>
+
+        <div class="stats">
+            <span id="totalTasks">Total: 0</span>
+            <span id="completedTasks">Completed: 0</span>
+            <span id="pendingTasks">Pending: 0</span>
+        </div>
+
+        <ul id="todoList" class="todo-list">
+            <!-- Todo items will be added here -->
+        </ul>
+
+        <div class="bulk-actions">
+            <button onclick="markAllComplete()">Mark All Complete</button>
+            <button onclick="deleteCompleted()">Delete Completed</button>
+            <button onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+
+    <div id="notification" class="notification">
+        <!-- Notifications will appear here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

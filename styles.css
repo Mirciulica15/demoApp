@@ -1,0 +1,224 @@
+/* Bug-ridden CSS with intentional issues */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    /* BUG: Missing color property makes text invisible on gradient background */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    /* BUG: Missing overflow handling for long content */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    /* BUG: Font size too large on mobile - no responsive design */
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* BUG: No flex-wrap, will break on small screens */
+}
+
+#todoInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#todoInput:focus {
+    border-color: #667eea;
+    /* BUG: Missing box-shadow for better focus indication */
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    /* BUG: No hover state defined */
+}
+
+/* BUG: Missing button:hover state completely */
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background: #f8f9fa;
+    color: #333;
+    border: 2px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.filter-btn.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    /* BUG: Text is too small and hard to read */
+    font-size: 12px;
+}
+
+.todo-list {
+    list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    /* BUG: No custom scrollbar styling, looks ugly */
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    transition: transform 0.2s;
+    /* BUG: Missing gap between flex items */
+}
+
+.todo-item:hover {
+    transform: translateX(5px);
+    /* BUG: Transform direction is wrong, should be subtle */
+}
+
+.todo-item.completed {
+    background: #e8f5e8;
+    border-left-color: #28a745;
+    opacity: 0.7;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-checkbox {
+    margin-right: 15px;
+    transform: scale(1.2);
+    /* BUG: Checkbox is too big and misaligned */
+    cursor: pointer;
+}
+
+.todo-text {
+    flex: 1;
+    font-size: 16px;
+    /* BUG: No word-wrap, long text will overflow */
+    word-wrap: none;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #333;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.bulk-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* BUG: No flex-wrap for mobile responsiveness */
+}
+
+.bulk-actions button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background: #6c757d;
+}
+
+.notification {
+    position: fixed;
+    top: -100px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: top 0.3s;
+    z-index: 1000;
+    /* BUG: Notification slides from wrong direction */
+}
+
+.notification.show {
+    top: 20px;
+}
+
+.notification.error {
+    background: #dc3545;
+}
+
+/* BUG: No media queries for responsive design */
+/* BUG: Missing dark mode support */
+/* BUG: No loading states or animations */
+/* BUG: Poor accessibility - missing focus indicators */
+
+/* Partial and broken media query */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    /* BUG: Missing responsive rules for other elements */
+}

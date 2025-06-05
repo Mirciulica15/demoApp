@@ -1,0 +1,727 @@
+{
+    "project": "Bug-Ridden Todo App",
+    "version": "1.0.0",
+    "created_date": "2025-06-05",
+    "bugs": [
+        {
+            "id": "BUG-001",
+            "title": "Text invisible on gradient background",
+            "description": "Body text is invisible because color property is missing, making text unreadable on the gradient background",
+            "severity": "high",
+            "priority": "high",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 12,
+            "steps_to_reproduce": [
+                "Open the web application",
+                "Observe that text appears invisible or very hard to read"
+            ],
+            "expected_behavior": "Text should be clearly visible with proper contrast",
+            "actual_behavior": "Text is invisible or barely visible on gradient background",
+            "labels": [
+                "bug",
+                "ui",
+                "css",
+                "accessibility"
+            ]
+        },
+        {
+            "id": "BUG-002",
+            "title": "Container overflow issues with long content",
+            "description": "Container lacks overflow handling, causing layout issues with long content",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 20,
+            "steps_to_reproduce": [
+                "Add very long todo items",
+                "Observe container layout breaking"
+            ],
+            "expected_behavior": "Container should handle overflow gracefully",
+            "actual_behavior": "Layout breaks with long content",
+            "labels": [
+                "bug",
+                "ui",
+                "css",
+                "layout"
+            ]
+        },
+        {
+            "id": "BUG-003",
+            "title": "Non-responsive design on mobile devices",
+            "description": "Font sizes are too large on mobile, no responsive design implemented",
+            "severity": "high",
+            "priority": "high",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 32,
+            "steps_to_reproduce": [
+                "Open app on mobile device or narrow browser window",
+                "Observe oversized elements and poor layout"
+            ],
+            "expected_behavior": "App should be responsive and work well on mobile",
+            "actual_behavior": "Elements are too large and layout breaks on mobile",
+            "labels": [
+                "bug",
+                "ui",
+                "responsive",
+                "mobile"
+            ]
+        },
+        {
+            "id": "BUG-004",
+            "title": "Input section breaks on small screens",
+            "description": "Input section lacks flex-wrap, causing elements to overflow on small screens",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 37,
+            "steps_to_reproduce": [
+                "Resize browser to very narrow width",
+                "Observe input and button overflowing container"
+            ],
+            "expected_behavior": "Input section should wrap or adapt to small screens",
+            "actual_behavior": "Elements overflow and break layout",
+            "labels": [
+                "bug",
+                "ui",
+                "responsive",
+                "flexbox"
+            ]
+        },
+        {
+            "id": "BUG-005",
+            "title": "Missing focus indication on input field",
+            "description": "Input field lacks proper focus styling with box-shadow for better UX",
+            "severity": "low",
+            "priority": "low",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 55,
+            "steps_to_reproduce": [
+                "Click on input field",
+                "Observe minimal focus indication"
+            ],
+            "expected_behavior": "Input should have clear focus indication",
+            "actual_behavior": "Focus indication is barely visible",
+            "labels": [
+                "bug",
+                "ui",
+                "accessibility",
+                "ux"
+            ]
+        },
+        {
+            "id": "BUG-006",
+            "title": "Buttons lack hover states",
+            "description": "Buttons have no hover effects defined, poor user interaction feedback",
+            "severity": "low",
+            "priority": "low",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 65,
+            "steps_to_reproduce": [
+                "Hover over any button",
+                "Observe no visual feedback"
+            ],
+            "expected_behavior": "Buttons should have hover effects",
+            "actual_behavior": "No visual feedback on hover",
+            "labels": [
+                "bug",
+                "ui",
+                "ux",
+                "interaction"
+            ]
+        },
+        {
+            "id": "BUG-007",
+            "title": "Stats text too small and hard to read",
+            "description": "Statistics section has font-size of only 12px, making it hard to read",
+            "severity": "medium",
+            "priority": "low",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 95,
+            "steps_to_reproduce": [
+                "Look at the stats section",
+                "Notice the very small text"
+            ],
+            "expected_behavior": "Stats should be easily readable",
+            "actual_behavior": "Text is too small and hard to read",
+            "labels": [
+                "bug",
+                "ui",
+                "typography",
+                "accessibility"
+            ]
+        },
+        {
+            "id": "BUG-008",
+            "title": "Ugly default scrollbar in todo list",
+            "description": "Todo list scrollbar uses default browser styling, looks unprofessional",
+            "severity": "low",
+            "priority": "low",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 102,
+            "steps_to_reproduce": [
+                "Add many todos to see scrollbar",
+                "Observe default browser scrollbar"
+            ],
+            "expected_behavior": "Custom styled scrollbar",
+            "actual_behavior": "Default ugly scrollbar",
+            "labels": [
+                "bug",
+                "ui",
+                "scrollbar",
+                "styling"
+            ]
+        },
+        {
+            "id": "BUG-009",
+            "title": "Missing gap between todo item elements",
+            "description": "Todo items lack proper spacing between flex elements",
+            "severity": "low",
+            "priority": "low",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 113,
+            "steps_to_reproduce": [
+                "Add a todo item",
+                "Notice elements are too close together"
+            ],
+            "expected_behavior": "Proper spacing between elements",
+            "actual_behavior": "Elements cramped together",
+            "labels": [
+                "bug",
+                "ui",
+                "spacing",
+                "layout"
+            ]
+        },
+        {
+            "id": "BUG-010",
+            "title": "Wrong hover transform direction",
+            "description": "Todo items transform in wrong direction on hover, should be subtle",
+            "severity": "low",
+            "priority": "low",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 121,
+            "steps_to_reproduce": [
+                "Hover over a todo item",
+                "Notice jarring transform effect"
+            ],
+            "expected_behavior": "Subtle hover effect",
+            "actual_behavior": "Jarring transform movement",
+            "labels": [
+                "bug",
+                "ui",
+                "animation",
+                "ux"
+            ]
+        },
+        {
+            "id": "BUG-011",
+            "title": "Oversized and misaligned checkbox",
+            "description": "Checkbox is scaled too large and not properly aligned",
+            "severity": "medium",
+            "priority": "low",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 140,
+            "steps_to_reproduce": [
+                "View todo items with checkboxes",
+                "Notice oversized and misaligned checkboxes"
+            ],
+            "expected_behavior": "Properly sized and aligned checkboxes",
+            "actual_behavior": "Checkboxes too big and misaligned",
+            "labels": [
+                "bug",
+                "ui",
+                "checkbox",
+                "alignment"
+            ]
+        },
+        {
+            "id": "BUG-012",
+            "title": "Long text overflow in todo items",
+            "description": "Todo text lacks word-wrap, causing long text to overflow",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 148,
+            "steps_to_reproduce": [
+                "Add a very long todo item text",
+                "Observe text overflowing the container"
+            ],
+            "expected_behavior": "Long text should wrap properly",
+            "actual_behavior": "Text overflows container",
+            "labels": [
+                "bug",
+                "ui",
+                "text-wrap",
+                "overflow"
+            ]
+        },
+        {
+            "id": "BUG-013",
+            "title": "Bulk actions not responsive on mobile",
+            "description": "Bulk actions section lacks flex-wrap for mobile responsiveness",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 171,
+            "steps_to_reproduce": [
+                "View bulk actions on mobile or narrow screen",
+                "Notice buttons overflowing"
+            ],
+            "expected_behavior": "Buttons should wrap on small screens",
+            "actual_behavior": "Buttons overflow container",
+            "labels": [
+                "bug",
+                "ui",
+                "responsive",
+                "mobile"
+            ]
+        },
+        {
+            "id": "BUG-014",
+            "title": "Notification slides from wrong direction",
+            "description": "Notification animation slides from top instead of right side",
+            "severity": "low",
+            "priority": "low",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 180,
+            "steps_to_reproduce": [
+                "Trigger any notification",
+                "Notice it slides from wrong direction"
+            ],
+            "expected_behavior": "Should slide from right side",
+            "actual_behavior": "Slides from top",
+            "labels": [
+                "bug",
+                "ui",
+                "animation",
+                "notification"
+            ]
+        },
+        {
+            "id": "BUG-015",
+            "title": "Missing responsive design media queries",
+            "description": "Incomplete media queries, most responsive rules are missing",
+            "severity": "high",
+            "priority": "high",
+            "type": "ui",
+            "file": "styles.css",
+            "line_number": 200,
+            "steps_to_reproduce": [
+                "Test app on various screen sizes",
+                "Notice poor responsive behavior"
+            ],
+            "expected_behavior": "App should work well on all screen sizes",
+            "actual_behavior": "Poor responsive behavior",
+            "labels": [
+                "bug",
+                "ui",
+                "responsive",
+                "media-queries"
+            ]
+        },
+        {
+            "id": "BUG-016",
+            "title": "No error handling for DOM elements",
+            "description": "JavaScript lacks error handling when DOM elements are not found",
+            "severity": "high",
+            "priority": "high",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 6,
+            "steps_to_reproduce": [
+                "Remove an element from HTML",
+                "Observe JavaScript errors in console"
+            ],
+            "expected_behavior": "Graceful handling of missing elements",
+            "actual_behavior": "JavaScript errors crash functionality",
+            "labels": [
+                "bug",
+                "javascript",
+                "error-handling"
+            ]
+        },
+        {
+            "id": "BUG-017",
+            "title": "No validation for empty or very long text",
+            "description": "Add todo function lacks proper input validation",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 25,
+            "steps_to_reproduce": [
+                "Try to add empty todo or very long text",
+                "Observe inadequate validation"
+            ],
+            "expected_behavior": "Proper input validation with limits",
+            "actual_behavior": "Inadequate validation allows problematic input",
+            "labels": [
+                "bug",
+                "javascript",
+                "validation"
+            ]
+        },
+        {
+            "id": "BUG-018",
+            "title": "No check for duplicate todos",
+            "description": "Users can add identical todo items without warning",
+            "severity": "low",
+            "priority": "low",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 32,
+            "steps_to_reproduce": [
+                "Add the same todo text multiple times",
+                "Notice duplicates are allowed"
+            ],
+            "expected_behavior": "Warn or prevent duplicate todos",
+            "actual_behavior": "Duplicates allowed without warning",
+            "labels": [
+                "bug",
+                "javascript",
+                "validation",
+                "ux"
+            ]
+        },
+        {
+            "id": "BUG-019",
+            "title": "Missing updatedAt field in todo objects",
+            "description": "Todo objects lack updatedAt timestamp for tracking changes",
+            "severity": "low",
+            "priority": "low",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 38,
+            "steps_to_reproduce": [
+                "Edit a todo item",
+                "Check data structure for updatedAt field"
+            ],
+            "expected_behavior": "Track when todos are updated",
+            "actual_behavior": "No update timestamp maintained",
+            "labels": [
+                "bug",
+                "javascript",
+                "data-model"
+            ]
+        },
+        {
+            "id": "BUG-020",
+            "title": "No validation if todo ID exists before toggle",
+            "description": "toggleTodo function doesn't validate if todo ID exists",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 49,
+            "steps_to_reproduce": [
+                "Call toggleTodo with non-existent ID",
+                "Observe potential runtime error"
+            ],
+            "expected_behavior": "Validate ID existence before processing",
+            "actual_behavior": "No validation causes potential errors",
+            "labels": [
+                "bug",
+                "javascript",
+                "validation",
+                "error-handling"
+            ]
+        },
+        {
+            "id": "BUG-021",
+            "title": "No confirmation dialog for delete actions",
+            "description": "Delete operations have no confirmation, risk of accidental deletion",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "ux",
+            "file": "script.js",
+            "line_number": 58,
+            "steps_to_reproduce": [
+                "Click delete on any todo",
+                "Notice immediate deletion without confirmation"
+            ],
+            "expected_behavior": "Confirmation dialog before deletion",
+            "actual_behavior": "Immediate deletion without confirmation",
+            "labels": [
+                "bug",
+                "javascript",
+                "ux",
+                "confirmation"
+            ]
+        },
+        {
+            "id": "BUG-022",
+            "title": "Poor UX with prompt for editing todos",
+            "description": "Edit function uses browser prompt instead of inline editing",
+            "severity": "medium",
+            "priority": "low",
+            "type": "ux",
+            "file": "script.js",
+            "line_number": 67,
+            "steps_to_reproduce": [
+                "Click edit on any todo",
+                "Notice old-style browser prompt"
+            ],
+            "expected_behavior": "Modern inline editing interface",
+            "actual_behavior": "Outdated browser prompt dialog",
+            "labels": [
+                "bug",
+                "javascript",
+                "ux",
+                "editing"
+            ]
+        },
+        {
+            "id": "BUG-023",
+            "title": "Using unsafe global event object",
+            "description": "filterTodos function uses global event object unsafely",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 81,
+            "steps_to_reproduce": [
+                "Call filterTodos programmatically",
+                "Observe potential error with event.target"
+            ],
+            "expected_behavior": "Safe event handling with proper parameters",
+            "actual_behavior": "Unsafe use of global event object",
+            "labels": [
+                "bug",
+                "javascript",
+                "event-handling"
+            ]
+        },
+        {
+            "id": "BUG-024",
+            "title": "No loading state or performance optimization",
+            "description": "renderTodos function lacks loading states and performance optimization",
+            "severity": "low",
+            "priority": "low",
+            "type": "performance",
+            "file": "script.js",
+            "line_number": 87,
+            "steps_to_reproduce": [
+                "Add many todos and observe rendering",
+                "Notice lack of loading feedback"
+            ],
+            "expected_behavior": "Loading states and optimized rendering",
+            "actual_behavior": "No loading feedback or optimization",
+            "labels": [
+                "bug",
+                "javascript",
+                "performance",
+                "ux"
+            ]
+        },
+        {
+            "id": "BUG-025",
+            "title": "No handling for empty todo list state",
+            "description": "App doesn't show helpful message when todo list is empty",
+            "severity": "low",
+            "priority": "low",
+            "type": "ux",
+            "file": "script.js",
+            "line_number": 96,
+            "steps_to_reproduce": [
+                "Clear all todos",
+                "Notice empty list with no helpful message"
+            ],
+            "expected_behavior": "Show helpful empty state message",
+            "actual_behavior": "Empty list with no guidance",
+            "labels": [
+                "bug",
+                "javascript",
+                "ux",
+                "empty-state"
+            ]
+        },
+        {
+            "id": "BUG-026",
+            "title": "XSS vulnerability with innerHTML",
+            "description": "Using innerHTML with user input creates XSS security vulnerability",
+            "severity": "critical",
+            "priority": "critical",
+            "type": "security",
+            "file": "script.js",
+            "line_number": 103,
+            "steps_to_reproduce": [
+                "Add todo with HTML/script tags",
+                "Observe potential XSS execution"
+            ],
+            "expected_behavior": "Safe rendering without XSS risk",
+            "actual_behavior": "Potential XSS vulnerability",
+            "labels": [
+                "bug",
+                "security",
+                "xss",
+                "critical"
+            ]
+        },
+        {
+            "id": "BUG-027",
+            "title": "Direct text manipulation without null checks",
+            "description": "updateStats function manipulates DOM without null safety checks",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 119,
+            "steps_to_reproduce": [
+                "Remove stats elements from DOM",
+                "Observe JavaScript errors"
+            ],
+            "expected_behavior": "Safe DOM manipulation with null checks",
+            "actual_behavior": "Potential errors from null references",
+            "labels": [
+                "bug",
+                "javascript",
+                "null-safety"
+            ]
+        },
+        {
+            "id": "BUG-028",
+            "title": "No confirmation for bulk destructive actions",
+            "description": "Bulk delete and clear all operations lack confirmation dialogs",
+            "severity": "high",
+            "priority": "high",
+            "type": "ux",
+            "file": "script.js",
+            "line_number": 145,
+            "steps_to_reproduce": [
+                "Click 'Clear All' or 'Delete Completed'",
+                "Notice immediate action without confirmation"
+            ],
+            "expected_behavior": "Confirmation for destructive bulk actions",
+            "actual_behavior": "Immediate destructive actions",
+            "labels": [
+                "bug",
+                "javascript",
+                "ux",
+                "confirmation"
+            ]
+        },
+        {
+            "id": "BUG-029",
+            "title": "Poor error handling in localStorage operations",
+            "description": "Error handling doesn't inform users of localStorage failures",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 170,
+            "steps_to_reproduce": [
+                "Fill localStorage or disable it",
+                "Notice silent failures"
+            ],
+            "expected_behavior": "User notification of storage issues",
+            "actual_behavior": "Silent failures with only console logs",
+            "labels": [
+                "bug",
+                "javascript",
+                "error-handling",
+                "storage"
+            ]
+        },
+        {
+            "id": "BUG-030",
+            "title": "Silent failure on localStorage parse errors",
+            "description": "loadTodos silently fails when localStorage data is corrupted",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 183,
+            "steps_to_reproduce": [
+                "Corrupt localStorage todos data",
+                "Reload page and notice silent failure"
+            ],
+            "expected_behavior": "Graceful handling with user notification",
+            "actual_behavior": "Silent failure, data loss",
+            "labels": [
+                "bug",
+                "javascript",
+                "error-handling",
+                "data-recovery"
+            ]
+        },
+        {
+            "id": "BUG-031",
+            "title": "Notification timeout not cleared properly",
+            "description": "Multiple quick notifications can cause timing issues",
+            "severity": "low",
+            "priority": "low",
+            "type": "functionality",
+            "file": "script.js",
+            "line_number": 200,
+            "steps_to_reproduce": [
+                "Trigger multiple notifications quickly",
+                "Notice timing conflicts"
+            ],
+            "expected_behavior": "Proper timeout management",
+            "actual_behavior": "Timing conflicts with multiple notifications",
+            "labels": [
+                "bug",
+                "javascript",
+                "timing",
+                "notifications"
+            ]
+        },
+        {
+            "id": "BUG-032",
+            "title": "No keyboard navigation support",
+            "description": "App lacks keyboard navigation and accessibility features",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "accessibility",
+            "file": "script.js",
+            "line_number": 1,
+            "steps_to_reproduce": [
+                "Try to navigate app using only keyboard",
+                "Notice poor keyboard support"
+            ],
+            "expected_behavior": "Full keyboard navigation support",
+            "actual_behavior": "Limited keyboard accessibility",
+            "labels": [
+                "bug",
+                "accessibility",
+                "keyboard-navigation"
+            ]
+        },
+        {
+            "id": "BUG-033",
+            "title": "Memory leaks from event listeners",
+            "description": "Event listeners are not properly cleaned up, causing memory leaks",
+            "severity": "medium",
+            "priority": "medium",
+            "type": "performance",
+            "file": "script.js",
+            "line_number": 15,
+            "steps_to_reproduce": [
+                "Navigate away and back to page multiple times",
+                "Check for memory leaks in dev tools"
+            ],
+            "expected_behavior": "Proper cleanup of event listeners",
+            "actual_behavior": "Memory leaks from unremoved listeners",
+            "labels": [
+                "bug",
+                "performance",
+                "memory-leaks",
+                "cleanup"
+            ]
+        }
+    ]
+}
